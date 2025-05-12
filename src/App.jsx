@@ -17,9 +17,8 @@ function App() {
       <TrackOrganizer />
       <TrackBpmFinder />
       <footer style={{ textAlign: 'center', marginTop: '3rem', fontSize: '0.8rem' }}>
-          Powered by <a href="https://getsongbpm.com" target="_blank" rel="noreferrer">getsongbpm.com</a>
+        Powered by <a href="https://getsongbpm.com" target="_blank">getsongbpm.com</a>
       </footer>
-
     </div>
   )
 }
