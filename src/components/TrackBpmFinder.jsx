@@ -13,7 +13,7 @@ function TrackBpmFinder() {
     setBpm(null)
 
     try {
-      const response = await fetch(`https://api.getsongbpm.com/search/?api_key=demo&q=${encodeURIComponent(query)}`)
+      const response = await fetch(`https://api.getsongbpm.com/search/?api_key=e4aac991fdda92e3f3ec3f3e995c89ec&q=${encodeURIComponent(query)}`)
       const data = await response.json()
       const track = data.search?.[0]
 
