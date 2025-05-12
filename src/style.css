@@ -16,7 +16,7 @@ html, body {
 body {
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 25rem 2rem 2rem; /* ← espacio arriba */
 }
 
 .app {
@@ -77,6 +77,37 @@ th, td {
   word-break: break-word;
 }
 
+/* HEADER y branding */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem 1rem;
+  background-color: #111;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 204, 153, 0.2);
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px #00cc99);
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.dj-name {
+  color: #00cc99;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
 /* Responsive tabla en móviles */
 @media (max-width: 600px) {
   table,
@@ -120,22 +151,21 @@ th, td {
   td:nth-of-type(3)::before { content: "Key"; }
   td:nth-of-type(4)::before { content: "Matches"; }
   td:nth-of-type(5)::before { content: "🗑️"; }
-}
 
-.header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
 
-.logo {
-  width: 50px;
-  height: 50px;
-}
+  .logo {
+    margin-bottom: 0.5rem;
+  }
 
-.dj-name {
-  color: #00cc99;
-  font-weight: bold;
-  font-size: 1.2rem;
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .dj-name {
+    font-size: 1.2rem;
+  }
 }
