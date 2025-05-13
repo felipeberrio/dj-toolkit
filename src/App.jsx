@@ -2,10 +2,20 @@ import './style.css'
 import BpmCalculator from './components/BpmCalculator'
 import KeyMatcher from './components/KeyMatcher'
 import TrackOrganizer from './components/TrackOrganizer'
-import TrackBpmFinder from './components/TrackBpmFinder'
+import SpotifyBpmFinder from './components/SpotifyBpmFinder';
+
 import logo from './assets/logo.png'
 
+import { useEffect } from 'react';
+import { getAccessToken } from './spotifyAuth'
+
 function App() {
+  useEffect(() => {
+    getAccessToken()
+  }, []);
+
+
+
   return (
     <div className="app">
       <header className="header">
@@ -15,12 +25,13 @@ function App() {
       <BpmCalculator />
       <KeyMatcher />
       <TrackOrganizer />
-      <TrackBpmFinder />
+      <SpotifyBpmFinder />
+      
       <footer style={{ textAlign: 'center', marginTop: '3rem', fontSize: '0.8rem' }}>
-        Powered by <a href="https://getsongbpm.com" target="_blank">getsongbpm.com</a>
+        Powered by <a href="https://developer.spotify.com" target="_blank">Spotify API</a>
       </footer>
     </div>
-  )
+  );
 }
 
 export default App

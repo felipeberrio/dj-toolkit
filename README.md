@@ -1,12 +1,39 @@
-# React + Vite
+# 🎧 DJ Toolkit by Cristian Berrio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Herramienta web todo-en-uno para DJs que mezcla precisión técnica con estilo. Incluye cálculo de BPM, emparejamiento de tonalidades, organización de tracks y búsqueda de BPM directamente desde Spotify.
 
-Currently, two official plugins are available:
+![DJ Toolkit Screenshot](./public/preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🎵 **Calculadora de BPM**  
+  Ingresa un valor y obtén la duración de beats y loops.
+
+- 🔑 **Key Matcher**  
+  Selecciona una tonalidad y encuentra las que son armónicamente compatibles.
+
+- 📋 **Organizador de Tracks**  
+  Agrega tus canciones con BPM y Key. Elimina fácilmente y exporta tu tabla.
+
+- 🎧 **Buscador de BPM con Spotify API**  
+  Ingresa un nombre y recupera el tempo real de la canción usando datos oficiales.
+
+---
+
+## 🛠️ Tecnologías
+
+- Vite + React
+- Spotify Web API (autenticación `client_credentials`)
+- Axios
+- CSS custom minimalista y responsivo
+
+---
+
+## 📦 Instalación local
+
+```bash
+git clone https://github.com/tu-usuario/dj-toolkit.git
+cd dj-toolkit
+npm install
